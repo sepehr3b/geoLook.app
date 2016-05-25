@@ -1,0 +1,40 @@
+<ion-side-menus enable-menu-with-back-views="true">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-dark" >
+
+      <ion-nav-buttons side="left" >
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+
+
+  <ion-side-menu side="left" expose-aside-when="large" style="background-color: black" ng-controller="GeoCtrl">
+
+        <!-- Profile -->
+        <div class=" w3-white">
+          <div class="w3-container">
+            <h4 class="w3-center">geoLook v 1.0</h4>
+            <p class="w3-center"><img src="img/geo.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+            <hr>
+            <p style="overflow:hidden;text-overflow:clip;white-space: nowrap;"><i class="fa fa-thumb-tack fa-fw w3-margin-right w3-text-theme" style="color: darkred"></i> Latitude:{{lat}}</p>
+            <p style="overflow:hidden;text-overflow:clip;white-space: nowrap;"><i class="fa fa-thumb-tack fa-fw w3-margin-right w3-text-theme" style="color: darkblue"></i> Longitude:{{lng}}</p>
+          </div>
+        </div>
+
+        <!-- Accordion -->
+        <div>
+          <div class=" w3-white">
+            <a href="#/app/map" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-globe fa-fw w3-margin-right"></i> Map</a>
+            <a href="#/app/list" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-star fa-fw w3-margin-right"></i> Near You</a>
+            <a href="#/app/about" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> About Us</a>
+          </div>
+        </div>
+
+      </div>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
